@@ -101,7 +101,7 @@ footer {
     margin-top: 30px;
 }
 
-button.top {
+a.top {
     position: fixed;
     bottom: 20px;
     right: 20px;
