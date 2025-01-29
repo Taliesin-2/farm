@@ -63,6 +63,7 @@ h2 {
     font-size: 1.75em;
     color: var(--black);
     margin-top: 30px;
+    text-align: left;
 }
 
 h3 {
