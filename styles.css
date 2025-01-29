@@ -23,13 +23,12 @@ body {
     font-family: var(--font-primary);
     color: var(--black);
     background-color: var(--white);
-    padding: 10px;
 }
 
 header {
     background-color: var(--green);
     color: var(--white);
-    padding: 20px;
+    margin-bottom: 30px;
 }
 
 nav {
@@ -97,7 +96,7 @@ section ul li img {
 footer {
     background-color: var(--green);
     color: var(--white);
-    padding: 20px;
+    margin-bottom: 30px;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
