@@ -137,7 +137,6 @@ a.top {
     }
     
     section ul {
-        max-width: 800px;
         margin: auto;
     }
     section ul {
@@ -159,7 +158,6 @@ a.top {
         grid-template-columns: repeat(3, 1fr);
     }
     section ul {
-        max-width: 1000px;
         margin: auto;
     }
     nav {
@@ -179,7 +177,6 @@ a.top {
         grid-template-columns: repeat(4, 1fr);
     }
     section ul {
-        max-width: 1200px;
         margin: auto;
     }
     nav {
