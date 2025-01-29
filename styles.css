@@ -37,7 +37,6 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
 }
 
 nav a {
@@ -47,7 +46,6 @@ nav a {
     text-decoration: none;
     display: block;
     width: 80%;
-    text-align: center;
     border-radius: 5px;
 }
 
@@ -62,7 +60,6 @@ h2 {
     font-size: 1.75em;
     color: var(--black);
     margin-top: 30px;
-    text-align: left;
 }
 
 h3 {
