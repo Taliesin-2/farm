@@ -136,10 +136,6 @@ a.top {
         width: auto;
     }
     
-    body {
-        padding: 20px;
-    }
-    
     section ul {
         max-width: 800px;
         margin: auto;
@@ -162,9 +158,6 @@ a.top {
     section ul {
         grid-template-columns: repeat(3, 1fr);
     }
-    body {
-        padding: 30px;
-    }
     section ul {
         max-width: 1000px;
         margin: auto;
@@ -184,9 +177,6 @@ a.top {
 @media (min-width: 1440px) {
     section ul {
         grid-template-columns: repeat(4, 1fr);
-    }
-    body {
-        padding: 40px;
     }
     section ul {
         max-width: 1200px;
