@@ -67,6 +67,7 @@ h3 {
     font-size: 1.25em;
     font-weight: bold;
     margin-top: 20px;
+    text-align: center;
 }
 
 ul, li, a {
@@ -83,6 +84,7 @@ section ul {
     gap: 20px;
     max-width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 section ul li img {
@@ -115,7 +117,13 @@ a.top {
     cursor: pointer;
     display: inline-block;
 }
-
+.copyright {
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--green);
+    margin-top: 10px;
+    padding: 10px 0;
+}
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 @media (min-width: 834px) {
     section ul {
