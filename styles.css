@@ -47,6 +47,9 @@ nav a {
     width: 80%;
     border-radius: 5px;
 }
+section {
+    padding: 30px;
+}
 
 h1 {
     font-family: var(--font-heading);
@@ -88,6 +91,7 @@ section ul {
 }
 
 section ul li img {
+    padding: 50px;
     width: 100%;
     height: auto;
     border-radius: 10px;
