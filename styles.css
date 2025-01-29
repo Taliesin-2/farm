@@ -103,7 +103,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    text-align: left;
+    text-align: center;
 }
 
 a.top {
