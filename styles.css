@@ -86,7 +86,7 @@ h3 {
 ul, li, a {
     font-family: var(--font-primary);
     font-size: 1.25em;
-    color: var(--black);
+    color: var(--white);
     list-style-type: none;
     text-align: center;
 }
