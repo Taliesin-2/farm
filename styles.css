@@ -32,10 +32,16 @@ header {
     padding: 20px;
     text-align: left;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     max-width: 1200px;
     margin: auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .header-title {
@@ -52,7 +58,6 @@ header {
 nav {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
 }
 
 nav a {
@@ -61,8 +66,6 @@ nav a {
     padding: 12px 24px;
     text-decoration: none;
     display: block;
-    width: 80%;
-    max-width: 200px;
     border-radius: 5px;
     text-align: center;
 }
@@ -113,6 +116,9 @@ section ul li {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section ul li img {
@@ -126,10 +132,10 @@ section ul li .overlay {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: auto;
     background: var(--overlay-bg);
     color: var(--white);
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
     font-size: 1.2em;
     display: flex;
@@ -185,6 +191,16 @@ a.top {
 }
 
 /* -------------------- RESPONSIVE MEDIA QUERIES -------------------- */
+@media (max-width: 833px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 10px;
+    }
+}
+
 @media (min-width: 834px) {
     section ul {
         grid-template-columns: repeat(2, 1fr);
