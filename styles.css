@@ -3,155 +3,220 @@
 
 /*-------------------- CSS RESET ---------------------------------------------------*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 /* -------------------- ROOT VARIABLES --------------------------------------- */
 :root {
-    --green: #06A816;
-    --orange: #E75D02;
-    --black: #000000;
-    --white: #ffffff;
-    --overlay-bg: rgba(0, 0, 0, 0.6);
-    --font-primary: 'Habibi', serif;
-    --font-heading: 'Irish Grover', cursive;
+--green: #06A816;
+--orange: #E75D02;
+--black: #000000;
+--white: #ffffff;
+--overlay-bg: rgba(0, 0, 0, 0.6);
+--font-primary: 'Habibi', serif;
+--font-heading: 'Irish Grover', cursive;
 }
 
 /* -------------------- GLOBAL STYLES -------------------- */
 body {
-    font-family: var(--font-primary);
-    color: var(--black);
-    background-color: var(--white);
+font-family: var(--font-primary);
+color: var(--black);
+background-color: var(--white);
 }
 
 header {
-    background-color: var(--green);
-    color: var(--white);
-    padding: 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.header-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.header-text {
-    display: flex;
-    flex-direction: column;
+background-color: var(--green);
+color: var(--white);
+padding: 20px;
+text-align: left;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+max-width: 1200px;
+margin: auto;
 }
 
 .header-title {
-    font-size: clamp(2rem, 5vw, 3rem);
-    color: var(--white);
+font-size: clamp(2rem, 5vw, 3rem);
+color: var(--white);
 }
 
 .header-subtitle {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    color: var(--white);
-    margin-top: 5px;
+font-size: clamp(1rem, 2.5vw, 1.5rem);
+color: var(--white);
+margin-top: 5px;
 }
 
 nav {
-    display: flex;
-    gap: 10px;
+display: flex;
+gap: 10px;
+margin-top: 10px;
 }
 
 nav a {
-    background-color: var(--orange);
-    color: var(--white);
-    padding: 12px 24px;
-    text-decoration: none;
-    display: block;
-    border-radius: 5px;
-    text-align: center;
+background-color: var(--orange);
+color: var(--white);
+padding: 12px 24px;
+text-decoration: none;
+display: block;
+width: 80%;
+max-width: 200px;
+border-radius: 5px;
+text-align: center;
 }
 
 section {
-    padding: 30px;
-    max-width: 1200px;
-    margin: auto;
-    text-align: left;
+padding: 30px;
+max-width: 1200px;
+margin: auto;
+text-align: left;
 }
 
 h1, h2 {
-    font-family: var(--font-heading);
-    text-align: left;
+font-family: var(--font-heading);
+text-align: left;
 }
 
 h2 {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    color: var(--black);
-    margin-top: 30px;
+font-size: clamp(1.5rem, 4vw, 2.5rem);
+color: var(--black);
+margin-top: 30px;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
+font-size: 1.5rem;
+font-weight: bold;
+margin-top: 20px;
+text-align: center;
 }
 
 ul, li, a {
-    font-family: var(--font-primary);
-    font-size: 1.25em;
-    color: var(--white);
-    list-style-type: none;
-    text-align: center;
+font-family: var(--font-primary);
+font-size: 1.25em;
+color: var(--white);
+list-style-type: none;
+text-align: center;
 }
 
-/* Ensure proper layout of header at medium breakpoints */
-@media (max-width: 833px) {
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    nav {
-        margin-top: 10px;
-    }
+section ul {
+padding: 0;
+display: grid;
+gap: 20px;
+max-width: 100%;
+margin: auto;
+grid-template-columns: 1fr;
 }
 
+section ul li {
+position: relative;
+overflow: hidden;
+border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section ul li img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+section ul li .overlay {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+    width: 80%;
+    width: auto;
+background: var(--overlay-bg);
+color: var(--white);
+    padding: 10px;
+    padding: 10px 20px;
+text-align: center;
+font-size: 1.2em;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
+
+footer {
+background-color: var(--green);
+color: var(--white);
+padding: 20px;
+margin-top: 30px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+text-align: center;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+width: 100%;
+max-width: 1200px;
+margin: auto;
+}
+
+.footer-section {
+flex: 1;
+text-align: center;
+}
+
+.copyright {
+text-align: center;
+font-size: 0.9em;
+color: var(--green);
+margin-top: 10px;
+padding: 10px 0;
+}
+
+a.top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: var(--orange);
+color: var(--white);
+text-decoration: none;
+border: none;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+display: inline-block;
+}
+
+/* -------------------- RESPONSIVE MEDIA QUERIES -------------------- */
 @media (min-width: 834px) {
-    .header-container {
-        flex-direction: row;
-    }
-    section ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    nav {
-        flex-direction: row;
-        justify-content: center;
-    }
-    nav a {
-        width: auto;
-    }
+section ul {
+grid-template-columns: repeat(2, 1fr);
+}
+nav {
+flex-direction: row;
+justify-content: center;
+}
+nav a {
+width: auto;
+}
 }
 
 @media (min-width: 1280px) {
-    section ul {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    nav a {
-        padding: 14px 28px;
-    }
+section ul {
+grid-template-columns: repeat(3, 1fr);
+}
+nav a {
+padding: 14px 28px;
+}
 }
 
 @media (min-width: 1440px) {
-    section ul {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    footer {
-        justify-content: space-between;
-    }
+section ul {
+grid-template-columns: repeat(4, 1fr);
+}
+footer {
+justify-content: space-between;
+}
 }
