@@ -41,14 +41,6 @@ header {
 
 .header-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.header-text {
-    display: flex;
     flex-direction: column;
 }
 
@@ -111,9 +103,96 @@ ul, li, a {
     text-align: center;
 }
 
-/* Ensure proper layout of header at medium breakpoints */
+section ul {
+    padding: 0;
+    display: grid;
+    gap: 20px;
+    max-width: 100%;
+    margin: auto;
+    grid-template-columns: 1fr;
+}
+
+section ul li {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section ul li img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section ul li .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    background: var(--overlay-bg);
+    color: var(--white);
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--green);
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+a.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* -------------------- RESPONSIVE MEDIA QUERIES -------------------- */
 @media (max-width: 833px) {
-    .header-container {
+    header {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -123,9 +202,6 @@ ul, li, a {
 }
 
 @media (min-width: 834px) {
-    .header-container {
-        flex-direction: row;
-    }
     section ul {
         grid-template-columns: repeat(2, 1fr);
     }
