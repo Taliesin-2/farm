@@ -113,6 +113,9 @@ section ul li {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section ul li img {
@@ -126,10 +129,10 @@ section ul li .overlay {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: auto;
     background: var(--overlay-bg);
     color: var(--white);
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
     font-size: 1.2em;
     display: flex;
