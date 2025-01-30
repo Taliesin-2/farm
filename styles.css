@@ -24,7 +24,7 @@ body {
     font-family: var(--font-primary);
     color: var(--black);
     background-color: var(--white);
-    text-align: center;
+    
 }
 
 header {
@@ -81,6 +81,7 @@ h3 {
     font-size: 1.25em;
     font-weight: bold;
     margin-top: 20px;
+    text-align: center;
 }
 
 ul, li, a {
@@ -114,8 +115,9 @@ section ul li img {
 
 section ul li .overlay {
     position: absolute;
-    justify-content: center;
-    width: 75%;
+    bottom: 50%;
+    left: 50%;
+    width: 100%;
     background: var(--overlay-bg);
     color: var(--white);
     padding: 10px;
