@@ -61,7 +61,7 @@ section {
     text-align: left;
 }
 
-h1, h2 {
+h3 {
     font-family: var(--font-heading);
     text-align: center;
 }
@@ -114,9 +114,8 @@ section ul li img {
 
 section ul li .overlay {
     position: absolute;
-    bottom: 50%;
-    left: 0;
-    width: 25%;
+    justify-content: center;
+    width: 75%;
     background: var(--overlay-bg);
     color: var(--white);
     padding: 10px;
