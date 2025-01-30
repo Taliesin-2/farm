@@ -32,10 +32,16 @@ header {
     padding: 20px;
     text-align: left;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     max-width: 1200px;
     margin: auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .header-title {
@@ -52,7 +58,6 @@ header {
 nav {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
 }
 
 nav a {
@@ -61,8 +66,6 @@ nav a {
     padding: 12px 24px;
     text-decoration: none;
     display: block;
-    width: 80%;
-    max-width: 200px;
     border-radius: 5px;
     text-align: center;
 }
@@ -188,6 +191,16 @@ a.top {
 }
 
 /* -------------------- RESPONSIVE MEDIA QUERIES -------------------- */
+@media (max-width: 833px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 10px;
+    }
+}
+
 @media (min-width: 834px) {
     section ul {
         grid-template-columns: repeat(2, 1fr);
